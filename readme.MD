@@ -15,6 +15,7 @@ kubectl get pods -A --> to dispaly all wode
 kubectl get pods -o wide --> to give pods wide information like ip adress and all
 kubectl get ns --> to get name space infortamtion 
 kubectl apply -f <>.yaml --> create a pod or any k8s resources using this command
+kubectl exec -it <pod-name> -- bash --> u can login to container
 ```
 
 
