@@ -44,3 +44,11 @@ drwxrwxr-x 2 ec2-user ec2-user  28 Jul 28 09:08 secrets
 
 ```
 
+### FOR REAL TIME PORJECT REFER THE BELOW LINKS DIARAMS
+
+```
+https://github.com/sivadevopsdaws74s/roboshop-documentation
+https://github.com/techworldwithsiva/k8-roboshop/blob/master/roboshop-k8.jpg
+
+```
+
