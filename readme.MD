@@ -11,3 +11,7 @@ kubectl get pods -o wide
 kubectl get ns
 
 ```
+
+## HI PADMA SRIKANTH 
+*chepu ra* 
+* chepanu
