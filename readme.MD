@@ -1,13 +1,13 @@
 Important commands
 ********************
-~~~
-1. kubectl get nodes
-~~~
-2. Kubectl describe node <node-name>
 
-Some basic Git commands are:
+Some basic kuberneteds commands are:
 ```
-git status
-git add
-git commit
+kubectl get nodes
+kubectl describe node <node-name>
+kubectl get pods 
+kubectl get pods -A
+kubectl get pods -o wide
+kubectl get ns
+
 ```
