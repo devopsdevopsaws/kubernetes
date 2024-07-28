@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-pod
+  labels:
+    purpose: demonstrate-envars
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: DEMO_GREETING
+      valueFrom:
+        configMapKeyRef:
+          name: myconfigmap
+          key: DEMO_GREETING
+    - name: DEMO_FAREWELL
+      valueFrom:
+        configMapKeyRef:
+          name: myconfigmap
+          key: DEMO_FAREWELL
+    - name: DEMO_MSG
+      valueFrom:
+        configMapKeyRef:
+          name: myconfigmap
+          key: DEMO_DEMO_MSG
