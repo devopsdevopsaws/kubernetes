@@ -17,5 +17,28 @@ kubectl get ns --> to get name space infortamtion
 kubectl apply -f <>.yaml --> create a pod or any k8s resources using this command
 kubectl exec -it <pod-name> -- bash --> u can login to container
 ```
+### COVER below concepts of kubernetes 
+*before going to realtime project*
+*Refer Hand book frst*
+```
+-rw-rw-r-- 1 ec2-user ec2-user  59 Jul 28 07:36 01-namespace.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 161 Jul 28 07:36 02-pod.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 216 Jul 28 07:40 03-multipod.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 168 Jul 28 08:05 04-imagepullpolicy.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 307 Jul 28 08:14 05-resource.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 453 Jul 28 08:19 06-limitrange.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 237 Jul 28 08:32 07-probe.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 194 Jul 28 08:40 08-labels.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 214 Jul 28 08:42 09-annotations.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 283 Jul 28 08:46 10-env.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 526 Jul 28 09:04 11-envconfig.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 217 Jul 28 09:04 12-envcompleteconfig.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 379 Jul 28 09:12 13-envsecret.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 526 Jul 28 09:30 14-svcclusterip.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 410 Jul 28 09:35 15-svcnodeport.yaml
+-rw-rw-r-- 1 ec2-user ec2-user 430 Jul 28 09:41 16-svcloadbalancer.yaml
+drwxrwxr-x 2 ec2-user ec2-user  31 Jul 28 09:00 configmaps
+drwxrwxr-x 2 ec2-user ec2-user  28 Jul 28 09:08 secrets
 
+```
 
