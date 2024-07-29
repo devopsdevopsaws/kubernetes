@@ -134,4 +134,5 @@ spec:
 The major disadvantage of the replicaset is if the image got upgraded or any changes in the image it will not applicabel to the replcia set 
 
 the disadvantage can be overcomed by Deployments in kubernetes.
+
 -------------------------------------------------------------------------------
