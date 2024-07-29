@@ -27,7 +27,42 @@ kubectl get pods -o wide
 kubectl describe pod <podname>
 kubectl logs -f <podname>
 kubectl exec -it <podname> -- bash
+kubectl delete pod <podname>
 
+## SVC
+
+kubectl get svc
+kubectl describe svc <svc_name>
+kubectl delete svc <svc_name>
+
+## nodes
+
+kubectl get nodes
+kubectl describe node <nodename>
+kubectl delete node <nodename>
+
+## Secret
+
+kubectl get secret
+kubectl describe secret <secretname>
+kubectl delete secret <secretname>
+
+## configmaps
+
+kubectl get configmap
+kubectl describe configmap <configmapname>
+kubectl delete configmap <configmapname>
+
+## Replciaset
+
+kubectl get rs
+kubectl describe rs <rsname>
+kubectl delete rs <rsname>
+
+## Delpoyment
+kubectl get deployment
+kubectl describe deployment <deploymentname>
+kubectl delete deployment <deploymentname>
 ```
 ### COVER below concepts of kubernetes 
 *before going to realtime project*
