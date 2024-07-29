@@ -136,3 +136,66 @@ The major disadvantage of the replicaset is if the image got upgraded or any cha
 the disadvantage can be overcomed by Deployments in kubernetes.
 
 -------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+## Deployment
+
+Advantage of deployment over replcia set is it will upgrade the images as well and it will take care of the changes with zero downtime
+
+*syntax*
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  # modify replicas according to your case
+  replicas: 4
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.25.0
+
+```
+
+It uses rolling mechanism technique and it achives zerodowntime.
+
+suppose u have 5 pods which are running rolling update will launch new pod as 6th pod once the new pod is up then the old pod will get deleted in that case there wont be any chances of downtime to the end-user/customer
+
+*the below parameters can be used in the deployment to make use of rollign updates*
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1 # suppose 5 pods are available this much loss we can take means 1pod
+      maxSurge: 2 # numbe of new pods created while rolling update
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+```
+
