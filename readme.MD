@@ -52,3 +52,40 @@ https://github.com/techworldwithsiva/k8-roboshop/blob/master/roboshop-k8.jpg
 
 ```
 
+## REPLICASET
+
+Replicaset can be used for high availblity and it is similar to ASG in AWS , understanding replica set is like it will continous create replica and monitor the pods if any pods get deleted it ll recreated the pods based on the replicas mentioned. 
+
+syntax is below
+
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontend
+  labels:
+    app: nginx
+    tier: frontend
+spec:
+  # modify replicas according to your case
+  replicas: 4
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.24.0
+
+```
+
+*Disadvantage of the replicaset*
+
+The major disadvantage of the replicaset is if the image got upgraded or any changes in the image it will not applicabel to the replcia set 
+
+the disadvantage can be overcomed by Deployments in kubernetes.
+
