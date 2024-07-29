@@ -23,6 +23,8 @@ kubcetl logs -f <pod-name>
 *before going to realtime project*
 *Refer Hand book frst*
 ```
+https://github.com/devopsdevopsaws/kubernetes/tree/master/k8s_resources
+
 -rw-rw-r-- 1 ec2-user ec2-user  59 Jul 28 07:36 01-namespace.yaml
 -rw-rw-r-- 1 ec2-user ec2-user 161 Jul 28 07:36 02-pod.yaml
 -rw-rw-r-- 1 ec2-user ec2-user 216 Jul 28 07:40 03-multipod.yaml
