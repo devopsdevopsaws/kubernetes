@@ -18,5 +18,5 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1:25:0
+        image: nginx:1.25.0
 
