@@ -199,3 +199,21 @@ spec:
         - containerPort: 80
 ```
 
+suppose in the above example if u upgrade from the image from 1.14 to 1.15 and so on
+
+with the help of the below commands u can roll out to previous version very easily 
+
+```
+kubectl rollout status deployment/nginx-deployment
+
+kubectl rollout history deployment/nginx-deployment
+
+kubectl rollout history deployment/nginx-deployment --revision=2
+
+kubectl rollout undo deployment/nginx-deployment --> for n-1
+
+kubectl rollout undo deployment/nginx-deployment --to-revision=2 --> to specific version
+```
+
+------------------------------------------------------------------------------------------------
+
