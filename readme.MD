@@ -1,6 +1,3 @@
-Important commands
-********************
-
 ## Install the eks cluster using the below git hub link and also make sure that u create IAM user and do aws configure to work
 ```
 https://github.com/devopsdevopsaws/k8-install/blob/master/README.md
