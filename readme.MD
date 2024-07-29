@@ -18,6 +18,16 @@ kubectl apply -f <>.yaml --> create a pod or any k8s resources using this comman
 kubectl exec -it <pod-name> -- bash --> u can login to container
 kubectl describe pod <pod-name>
 kubcetl logs -f <pod-name>
+
+**PODS**
+```
+kubectl get pods
+kubectl get pods -A
+kubectl get pods -o wide
+kubectl describe pod <podname>
+kubectl logs -f <podname>
+kubectl exec -it <podname> -- bash
+```
 ```
 ### COVER below concepts of kubernetes 
 *before going to realtime project*
