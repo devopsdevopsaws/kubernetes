@@ -182,8 +182,8 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 1 # suppose 5 pods are available this much loss we can take means 1pod
-      maxSurge: 2 # numbe of new pods created while rolling update
+      maxUnavailable: 1 ---> suppose 5 pods are available this much loss we can take means 1pod
+      maxSurge: 2 --->  number of new pods created while rolling update
   selector:
     matchLabels:
       app: nginx
