@@ -29,7 +29,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 10Gi
+      storage: 5Gi
   volumeName: my-ebs-volume
 ---
 apiVersion: v1
