@@ -1,10 +1,21 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: simple-webapp
+  name: nginx-deployment
   labels:
-    app: webapp
+    app: nginx
 spec:
-  containers:
-    - name: main-application
-      image: nginx
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
