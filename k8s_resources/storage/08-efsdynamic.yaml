@@ -6,7 +6,7 @@ provisioner: efs.csi.aws.com
 reclaimPolicy: Delete
 parameters:
   provisioningMode: efs-ap
-  fileSystemId: fs-0d5b07eb6d1a46b98
+  fileSystemId: fs-016f5feace4c2f4bd
   directoryPerms: "700"
   gidRangeStart: "1000" # optional
   gidRangeEnd: "2000" # optional
