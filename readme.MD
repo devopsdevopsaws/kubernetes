@@ -217,6 +217,42 @@ kubectl rollout undo deployment/nginx-deployment --to-revision=2 --> to specific
 
 ------------------------------------------------------------------------------------------------
 
+## kubernetes storage
+
+```
+Types:
+1) EmptyDir
+2) hostpath
+3) pv
+4) PVC
+5) storage class
+
+```
+```
+Practials to understand indepth
+
+https://github.com/devopsdevopsaws/kubernetes/tree/master/k8s_resources/storage
+
+01.withoutstorage.yaml
+
+02-config.yaml
+
+03-emptydir1.yaml
+
+04-emptydir2.yaml
+
+05-hostpath.yaml
+
+06-ebs.yaml
+
+07-ebsdynamic.yaml
+
+08-efsdynamic.yaml
+
+```
+
+
+
 ## Kubernetes Advanced scheduling concepts
 ```
 *Node Name*
