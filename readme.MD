@@ -217,3 +217,11 @@ kubectl rollout undo deployment/nginx-deployment --to-revision=2 --> to specific
 
 ------------------------------------------------------------------------------------------------
 
+## Kubernetes Advanced scheduling concepts
+*Node Name*
+*Node selector*
+*Node Affinity*
+*Pod Affinity*
+*taint*
+*tolarence*
+

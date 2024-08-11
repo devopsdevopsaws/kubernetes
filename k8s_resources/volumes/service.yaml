@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongo-svc
+  name: nginx-svc
 spec:
-  ports:
-    - port: 27017
-      protocol: TCP
-      targetPort: 27017
-      nodePort: 32000
   selector:
-    app: mongo
-  type: NodePort
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
