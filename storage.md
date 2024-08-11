@@ -12,3 +12,4 @@ Types:
 
 Basic understanding of the above 
 
+![p1](https://github.com/user-attachments/assets/dd916881-b4ff-49fd-a6d1-c1dfbc40390b)
