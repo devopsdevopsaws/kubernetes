@@ -11,7 +11,9 @@ Types:
 
 
 Basic understanding of the above 
+----
 
-![p1](https://github.com/user-attachments/assets/799205a8-053f-4834-bace-65544d41ef34)
 
 
+
+![p2](https://github.com/user-attachments/assets/cd31e4f7-83b1-4edd-ae74-6a72ff12a3b9)
