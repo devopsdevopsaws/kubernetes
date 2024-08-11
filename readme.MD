@@ -259,8 +259,8 @@ https://github.com/devopsdevopsaws/kubernetes/tree/master/k8s_resources/storage
 *Node selector*
 *Node Affinity*
 *Pod Affinity*
-*taint*
-*tolarence*
+*taint* --> Node Level
+*tolarence* --> Pod Level
 ```
 ```
 ------------------> For diagarams refer **advancedscheduling.md**
