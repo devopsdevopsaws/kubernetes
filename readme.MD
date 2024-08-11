@@ -226,4 +226,5 @@ kubectl rollout undo deployment/nginx-deployment --to-revision=2 --> to specific
 *taint*
 *tolarence*
 ```
-
+Below images
+------------
